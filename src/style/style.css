@@ -17,13 +17,26 @@ code {
   flex-direction: row;
 }
 
+.tcenter {
+  text-align: center;
+}
+
+.font1 {
+  font-family: "Roboto Mono", monospace;
+}
+
+.font2 {
+  font-family: "Fjalla One", sans-serif;
+}
+/*------------------------------Nav Bar---------------------------*/
 .navbar {
   position: fixed;
   width: 100%;
   justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   font-family: "Roboto Mono", monospace;
   color: white;
+  z-index: 10;
 }
 
 .navbar div h4 {
@@ -39,10 +52,13 @@ code {
   width: 35px;
   height: 35px;
   padding: 10px;
-  filter: opacity(0.4) drop-shadow(0 0 0 rgb(255, 255, 255));
+  filter: invert(90%) brightness(100%) contrast(100%);
 }
 
+/*-------------------------------About Me------------------------------*/
+
 .about {
+  padding-top: 64px;
   align-items: center;
   background-color: #0f1922;
   color: #9f9982;
@@ -67,3 +83,62 @@ code {
   padding-left: 40px;
   padding-right: 20px;
 }
+
+/*---------------------------Work------------------------------*/
+
+.work {
+  margin-top: 60px;
+}
+
+.work header h2 {
+  color: blue;
+}
+
+.work main {
+  position: relative;
+  background-position: center;
+  color: white;
+  padding: 20% 150px 10px 150px;
+  min-height: 400px;
+  transition: transform .35s ease-in-out;
+  overflow: hidden;
+}
+
+.work-link p:hover {
+  text-decoration: underline;
+  transition: 0.2s;
+}
+
+.work-link p {
+  margin-right: 30px;
+}
+
+.work-link a:link {
+  text-decoration: none;
+}
+
+.work main img {
+  width: 20px;
+  height: 20px;
+  filter: invert(90%) brightness(100%) contrast(200%);
+  position: absolute;
+  top: 50%;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.work main img:hover {
+  background-color: rgba(255, 255, 255, 0.212);
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
