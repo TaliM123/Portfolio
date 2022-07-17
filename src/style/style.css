@@ -302,3 +302,11 @@ padding-right: 60px;
     padding: 150px 70px 80px 70px;
   }
 }
+@media(max-width: 340px){
+  .work main {
+    min-height: 620px;
+  }
+  .contact p{
+    font-size: small;
+  }
+}
